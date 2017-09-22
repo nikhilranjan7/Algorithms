@@ -21,4 +21,4 @@ def palindrome_permutation(string):
 
     return True
 
-print(palindrome_permutation("Tacto Coa"))
+print(palindrome_permutation("Able was I ere I saw Elba"))
