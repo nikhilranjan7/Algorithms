@@ -16,4 +16,5 @@ Space complexity: O(N)
 '''
 Improve points:
 - Read about space complexity
+    Space complexity includes auxiliary space also i.e. the space which is used by algorithm in computation but freed before returning the result. Example list comprehension at Line 6 uses O(N) space
 '''
