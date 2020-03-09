@@ -28,5 +28,19 @@ Space complexity: O(N)
 '''
 Improve points:
 - Learn about space complexity of DFS/BFS
+    - Space complexity of iterative and recursive implementation is same. Depends on size of queue i.e. dependent on size of nodes O(N)
 - Implement DFS iteratively
+
+    def traverse_preorder(node):
+        stack = []
+        level = 0
+        stack.append((node, level))
+        preorder = []
+        while(len(stack) != 0):
+            n, level = stack.pop()
+            if n != None:
+                preorder.append((n.val, level))
+            stack.append((n.right, level+1))
+            stack.append((n.left, level+1))
+
 '''
