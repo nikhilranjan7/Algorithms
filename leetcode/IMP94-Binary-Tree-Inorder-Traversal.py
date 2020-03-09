@@ -43,4 +43,25 @@ Improve points:
             stack.append((n.right, level+1))
             stack.append((n.left, level+1))
 
+    def traverse_inorder(node):
+        stack = []
+        level = 0
+        stack.append((node, level))
+        inorder = []
+        current = node.left
+        while(True):
+
+            if len(stack) > 0:
+                if current != None:
+                    stack.append((current.left, level+1))
+                    current = current.left
+                    level += 1
+                    continue
+
+                current, level = stack.pop()
+                inorder.append((current.val, level))
+                current, level = current.right, level+1
+
+    def traverse_postorder(node):
+        
 '''
