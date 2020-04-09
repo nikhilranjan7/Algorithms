@@ -18,11 +18,11 @@ class Solution:
             already.add(digit_sum)
 
 '''
-Time complexity:
-Space complexity:
+Time complexity: O(log(n)) with base 10
+Space complexity: O(log(n))
 '''
 
 '''
 Improve points:
-- Find timecomplexity for finding a prime
+- 
 '''
